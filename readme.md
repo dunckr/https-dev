@@ -8,8 +8,7 @@ Extracted from [webpack-dev-server](https://github.com/webpack/webpack-dev-serve
 
 * Developing locally when integrating with third parties especially webhooks can require https
 * Generating certificates is a pain
-* It clutters up the repository
-* One more thing to manage
+* Certificates clutter up the repository
 
 ## Usage
 
