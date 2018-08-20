@@ -1,10 +1,11 @@
 {
   "name": "https-dev",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Self signed certificates for local https",
   "main": "index.js",
   "scripts": {
-    "start": "node example/express",
+    "start:express": "node examples/express",
+    "start:https": "node examples/https",
     "docs": "documentation readme index.js --section=API",
     "test": "jest"
   },
