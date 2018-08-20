@@ -10,6 +10,12 @@ Extracted from [webpack-dev-server](https://github.com/webpack/webpack-dev-serve
 * Generating certificates is a pain
 * Certificates clutter up the repository
 
+## Installation
+
+```bash
+npm install https-dev
+```
+
 ## Usage
 
 ### https
