@@ -1,0 +1,22 @@
+{
+  "name": "https-dev",
+  "version": "0.0.1",
+  "description": "Self signed certificates for local https",
+  "main": "index.js",
+  "scripts": {
+    "start": "node example/express",
+    "docs": "documentation readme index.js --section=API",
+    "test": "jest"
+  },
+  "author": "Duncan Beaton <dunckr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "del": "^3.0.0",
+    "selfsigned": "^1.10.3"
+  },
+  "devDependencies": {
+    "documentation": "^8.1.1",
+    "express": "^4.16.3",
+    "jest": "^23.5.0"
+  }
+}
