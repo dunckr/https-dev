@@ -8,10 +8,21 @@ Extracted from [webpack-dev-server](https://github.com/webpack/webpack-dev-serve
 
 * Developing locally when integrating with third parties especially webhooks can require https
 * Generating certificates is a pain
-* It clutters up the repository
-* One more thing to manage
+* Certificates clutter up the repository
 
 ## Usage
+
+### https
+
+```js
+const https = require('https');
+
+const httpsDev = require('https-dev');
+
+const ssl = httpsDev();
+
+https.createServer(ssl, (req, res) => res.end('httpsDev')).listen(3000);
+```
 
 ### Express
 
@@ -24,6 +35,8 @@ const httpsDev = require('https-dev');
 const ssl = httpsDev();
 
 const app = express();
+
+app.get('/', (req, res) => res.send('httpsDev'));
 
 https.createServer(ssl, app).listen(3000);
 ```
